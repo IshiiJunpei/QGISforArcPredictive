@@ -19,4 +19,4 @@
 
 - [配布資料](https://github.com/IshiiJunpei/QGISforArcVector/blob/master/05%E6%89%80%E5%9C%A8%E7%A2%BA%E8%AA%8D%E8%AA%BF%E6%9F%BB%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B.pdf)
 
--  [スライド](https://IshiiJunpei.github.io/QGISforArcVector)
+-  [スライド](https://IshiiJunpei.github.io/QGISforArcPredictive)

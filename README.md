@@ -17,6 +17,6 @@
 - GISデータを利用した統計処理
 ## ドキュメント
 
-- [配布資料](https://github.com/IshiiJunpei/QGISforArcVector/blob/master/05%E6%89%80%E5%9C%A8%E7%A2%BA%E8%AA%8D%E8%AA%BF%E6%9F%BB%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B.pdf)
+- [配布資料](https://github.com/IshiiJunpei/QGISforArcPredictive/blob/master/99QGIS%E3%81%A7%E9%81%BA%E8%B7%A1%E7%AB%8B%E5%9C%B0%E5%88%86%E6%9E%90.pdf)
 
 -  [スライド](https://IshiiJunpei.github.io/QGISforArcPredictive)

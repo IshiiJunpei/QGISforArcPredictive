@@ -27,7 +27,7 @@ p<-ggplot(na.omit(data))+geom_bar(aes(Aspect))+scale_fill_ptol()+theme_minimal()
 ggsave("graph04.png", p, family="Japan1GothicBBB",width=5,height=4) #ゴシックフォントを指定してpdfに保存
 
 
-####遺跡有りとナシを結合
+####遺跡有りと無しを結合
 merge<-read.csv("Merge.csv")
 ##データ整形
 merge<-merge[,c(1,4:8)]

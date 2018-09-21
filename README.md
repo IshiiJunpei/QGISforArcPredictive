@@ -185,7 +185,7 @@ gdal_rasterize  -burn 1.0 -tr 10.0 10.0 -a_nodata 0.0
 - glal_rasterize　コマンド
 - -burnオプション　データのあるところに代入する値（1を代入）
 - -trオプション　解像度を指定（x座標、y座標ともに10mを指定）
-- -teオプション　ラスタ化する対象範囲を指定（xmini,xmax,ymini,ymax）
+- -teオプション　ラスタ化する対象範囲を指定（xmini ymini xmax ymax）
 - ofオプション　作成するラスタファイル形式（GTiffを指定）
 - 入力ファイル　出力ファイル
 
@@ -308,7 +308,7 @@ Aspectレイヤのバンド1を意味します。
 
 ---
 ### ラスタのポリゴン化
-<br>
+
 - 方位を離散量に変更する
 - 離散量ラスタをベクタ化する
 - 方位ラスタをポリゴン化する
@@ -349,7 +349,7 @@ Aspectレイヤのバンド1を意味します。
 - 値を取得したいレイヤを選択
 - 出力レイヤは「.gpkg」一択
 
-<img src="06.png" width=35%>
+<img src="06.png" width=50%>
 
 - 「Field」タブを選択
 - 「name」フィールドをわかりやすくリネーム
@@ -373,7 +373,7 @@ Aspectレイヤのバンド1を意味します。
 - 「出力フィールド名」→「aspect」
 - 「出力フィールドタイプ」→「string」
 
-<img src="42.png" width=60%>
+<img src="42.png" width=90%>
 
 ---
 構文は次のとおりです。
@@ -408,7 +408,8 @@ END
 ### 遺跡立地地点の地形指標をcsvに書き出す
 
 - GISデータをcsvに出力する
-- 表計算ソフトで統計処理
+- 表計算ソフトや統計ソフトで統計処理
+	- 研修ではRのggplot2パッケージを使用したグラフを提示しました。
 
 ---
 「Iseki.gpkg」→右クリック→「エクスポート」→「地物の保存」
@@ -439,7 +440,7 @@ END
 
 ---
 ### データ全体の可視化
-<img src="R_graph/graph01.png" width=60%>
+<img src="R_graph/graph01.png" width=70%>
 
 ### 傾斜角度のヒストグラム
 <img src="R_graph/graph02.png" width=70%>
@@ -623,7 +624,7 @@ ggsave("graph08.png", p, family="Japan1GothicBBB",width=4,height=4)
 ---
 離散量×離散量=「遺跡の有無」×「斜面方位」
 
-<img src="R_graph/graph09.png" width=90%>
+<img src="R_graph/graph09.png" width=70%>
 
 ```{r}
 p<-ggplot(merge)+geom_bar(aes(x=Aspect))+
